@@ -1,0 +1,21 @@
+USE [BitCoin]
+GO
+
+/****** Object:  Table [dbo].[tbUsuario]    Script Date: 30/10/2020 21:17:28 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbUsuario](
+	[Login] [varchar](50) NOT NULL,
+	[Senha] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_tbUsuario] PRIMARY KEY CLUSTERED 
+(
+	[Login] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
